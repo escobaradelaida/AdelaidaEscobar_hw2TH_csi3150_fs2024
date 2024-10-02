@@ -28,7 +28,7 @@
     <main>
         <!--an image of myself and the paragraph with quote-->
         <!--I used div so that I can place my image and quote in the middle of the page for now until we use CSS-->
-        <div style="text-align: center;">
+        <div style="text-align: center; border:2px solid #000000 ;">
             <img src="./assets/img/unnamed.jpg" width="229px" height="427px" alt="An image of me.">
             <br><quote>“I am so clever that sometimes I don’t understand a single word of what I am saying.” — Oscar Wilde</quote></br>
         </div>
@@ -47,14 +47,27 @@
             <progress id="credits" value="58", max="109"> 53% </progress>
         </p>
     </main>
-    <footer>
-        <hr>Adelaida Escobar&#169;, Oakland University 2024
+    <footer style="text-align: center;">
+        <!--<hr>Adelaida Escobar&#169;, Oakland University 2024
             <ul>
                 <li>Email Me: <a href="mailto:adelaidaescobar@oakland.edu">adelaidaescobar@oakland.edu</a></li>
                 <li><a href="https://www.linkedin.com/in/adelaida-escobar/">LinkedIn</a></li>
                 <li><a href="https://github.com/escobaradelaida">Github</a></li>
             </ul>  
-        </hr>
+        </hr> -->
+        <!--using a table to fix layout of the contact info in the footer-->
+        <hr>Adelaida Escobar&#169;, Oakland University 2024</hr>
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <ul style="list-style-type:none;">
+                        <li style="display: list-item;">Email Me:<a href="adelaidaescobar@oakland.edu">adelaidaescobar@oakland.edu</a></li>
+                        <li style="display: list-item;"><a href="http://www.linkedin.com/in/adelaida-escobar/">LinkedIn</a></li>
+                        <li style="display: list-item;"> <a href="http://github.com/escobaradelaida">Github</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </footer>
 </body>
 </html>
