@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>Adelaida Escobar</h1>
+        <h1 style="text-align: center;" >Adelaida Escobar's Portfolio</h1>
         <!--my navigation-->
         <nav>
+            <h2>Traverse Through My Site</h2>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -26,9 +27,34 @@
     </header>
     <main>
         <!--an image of myself and the paragraph with quote-->
-        <img src="./assets/img/unnamed.jpg" width="229px" height="427px" alt="An image of me.">
-        <quote>“I am so clever that sometimes I don’t understand a single word of what I am saying.” — Oscar Wilde</quote>
+        <!--I used div so that I can place my image and quote in the middle of the page for now until we use CSS-->
+        <div style="text-align: center;">
+            <img src="./assets/img/unnamed.jpg" width="229px" height="427px" alt="An image of me.">
+            <br><quote>“I am so clever that sometimes I don’t understand a single word of what I am saying.” — Oscar Wilde</quote></br>
+        </div>
+        
+        <br>
+        <hr>
+        <p>
+            <h2>About Me</h2>
+            <p>My name is Adelaida Escobar. I am a IT student studying at Oakland University.
+                I am a first-generation college student. My parents are from Mexico and immigrated to the States in the early 90s.
+                I am an IT Assistant at a public library in which I am responsible from library technology and software. Once I 
+                graduate from OU, I would stay within the public sector, preferably being an IT professional in the medical field. To
+                know more about me, visit the "My Resume" and "Fun Facts About Me" pages.
+            </p>
+            <label for="credits">Completing My Degree</label>
+            <progress id="credits" value="58", max="109"> 53% </progress>
+        </p>
     </main>
-    <footer></footer>
+    <footer>
+        <hr>Adelaida Escobar&#169;, Oakland University 2024
+            <ul>
+                <li>Email Me: <a href="mailto:adelaidaescobar@oakland.edu">adelaidaescobar@oakland.edu</a></li>
+                <li><a href="https://www.linkedin.com/in/adelaida-escobar/">LinkedIn</a></li>
+                <li><a href="https://github.com/escobaradelaida">Github</a></li>
+            </ul>  
+        </hr>
+    </footer>
 </body>
 </html>
