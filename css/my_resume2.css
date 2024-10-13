@@ -17,9 +17,8 @@
 
 /* Body styling */
 body {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out; /*this causes the website to load in gently*/
     font-family: 'Kanit', sans-serif; /* Google font */
-    color: #333;
     min-height: 100vh;
     background: linear-gradient(0deg, rgba(100,119,217,1) 0%, rgba(225,0,252,0.22591043253238796) 100%);
     display: flex;
@@ -31,11 +30,10 @@ body {
 .navbar2 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /*aligns the items vertically*/
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
     backdrop-filter: blur(10px); /* Adds blur to background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the navbar */
     border-radius: 10px;
 }
 
@@ -44,13 +42,14 @@ body {
 }
 
 .navbar2 ul {
-    list-style-type: none;
+    list-style-type: none; /*remove bullet points*/
     display: flex;
-    justify-content: center;
+    justify-content: center; /*centers list horizontal on the navbar*/
     padding: 0;
     margin: 0;
 }
 
+/*add margin to left and right of each list item*/
 .navbar2 li {
     margin: 0 20px;
 }
@@ -59,9 +58,11 @@ body {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+    /*hovering transitioning to make it gentle*/
     transition: color 0.3s ease;
 }
 
+/*change the color of the link when hovered*/
 .navbar2 a:hover {
     color: #f0e68c; /* Hover color change */
 }

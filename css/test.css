@@ -40,10 +40,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
-    backdrop-filter: blur(10px); /* Adds blur to background */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the box created around the navbar */
-    border-radius: 10px;
+    border-radius: 10px; /*make the border for the navbar not be so sharp but rounder*/
 }
 
 /*might change this color*/
@@ -52,17 +50,17 @@ header {
 }
 
 .navbar ul {
-    list-style-type: none;
+    list-style-type: none; /*got rid of bullet points*/
     display: flex;
     justify-content: center;
     padding: 0;
     margin: 0;
 }
 
+/*add margins around the item lists*/
 .navbar li {
     margin: 0 20px;
 }
-
 
 .navbar a {
     /*gets rid of the underline that keeps showing up*/
@@ -88,7 +86,7 @@ header {
 /*w3schools suggested how to add a border-radius to make the img oval and border */
 .landing-img img {
     border-radius: 50%; /* Circular image */
-    width: 550px; /* Adjust size as needed */
+    width: 550px; /* Adjust size ?? */
     height: auto;
     border: 6px solid rgb(227, 221, 236); /* White border around image */
     /*i want to user to hover over the img and have it grow so i used box-shadow to create depth
@@ -98,7 +96,7 @@ header {
 }
 
 .landing-img img:hover {
-    transform: scale(1.1); /* Scale up on hover */
+    transform: scale(1.1); /* Scale up on hover 10%*/
 }
 
 /*hated the default hr so looked on w3schools for better options.
@@ -183,15 +181,4 @@ label{
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-    .landing-img img {
-        width: 80%; /* Adjust image size for smaller screens */
-    }
-
-    .bio-section {
-        width: 90%; /* Full width for smaller screens */
-    }
 }

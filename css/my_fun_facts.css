@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-/* Animation for subtle appearance */
+/* Animation for subtle appearance. found on w3schools */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -20,8 +20,7 @@
 body {
     animation: fadeIn 1s ease-in-out;
     font-family: 'Kanit', sans-serif; /* Google font */
-    color: #333;
-    min-height: 100vh;
+    min-height: 100vh; /*couldn't figure out how to have all of the background covered so i used this value*/
     background: linear-gradient(0deg, rgba(100,119,217,1) 0%, rgba(225,0,252,0.22591043253238796) 100%);
     display: flex;
     flex-direction: column;
@@ -34,9 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
-    backdrop-filter: blur(10px); /* Adds blur to background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around the navbar*/
     border-radius: 10px;
 }
 
@@ -56,10 +53,12 @@ body {
     margin: 0 20px;
 }
 
+/*the links will be black but will change color with hover*/
 .navbar3 a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+    /*helps make the color change be not so abrupt*/
     transition: color 0.3s ease;
 }
 
@@ -83,15 +82,19 @@ h2 {
     border: 5px solid #000000
 }
 
+/*make the image grow without it being harsh*/
 .hover-image{
     transition: transform 0.3s ease;
 }
+
+/*make the image grow about 10%*/
 .hover-image:hover{
     transform: scale(1.1);
 }
 
 /* book summary */
 p {
+    /*i put margins all around bc i did not want to summary to touch the sides of the screen*/
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -111,7 +114,7 @@ div a:hover{
 hr {
     border: none;
     height: 6px;
-    width: 50%; /* width of the line*/
+    width: 50%; /* width of the line. i didn't want it being across the screen so i made it half the size using width*/
     background-color: #3f51b5;
     margin: 20px auto; /* Center the rule on the page */
 }
