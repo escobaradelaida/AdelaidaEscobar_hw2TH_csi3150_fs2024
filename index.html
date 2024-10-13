@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="shortcut icon" href="./assets/img/android-chrome.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/test.css">
 </head>
 <body>
     <header>
-        <h1 style="text-align: center;" >Adelaida Escobar's Portfolio</h1>
+        <!--added class to h1 header-->
+        <h1 class="h1" >Adelaida Escobar's Portfolio</h1>
         <!--my navigation-->
-        <nav>
+        <nav class="navbar">
             <h2>Traverse Through My Site</h2>
             <ul>
                 <li>
@@ -28,17 +30,20 @@
     <main>
         <!--an image of myself and the paragraph with quote-->
         <!--I used div so that I can place my image and quote in the middle of the page for now until we use CSS-->
-        <div style="text-align: center; border:2px solid #000000 ;">
-            <img src="./assets/img/graduation.jpg" width="852px" height="560px" alt="An image of me.">
-            <br><quote>“I am so clever that sometimes I don’t understand a single word of what I am saying.” — Oscar Wilde</quote></br>
+        <!--<div style="text-align: center; border:2px solid #000000 ;">-->
+        <div class="landing-img">
+            <!--<img src="./assets/img/graduation.jpg" width="852px" height="560px" alt="An image of me.">-->
+            <img src="./assets/img/graduation.jpg"  alt="An image of me.">
+            <!--<br><quote>“I am so clever that sometimes I don’t understand a single word of what I am saying.” — Oscar Wilde</quote></br>-->
         </div>
+        <br><quote>“I am so clever that sometimes I don’t understand a single word of what I am saying.” — Oscar Wilde</quote></br>
         
         <br>
         <hr>
         <p>
             <h2>About Me</h2>
-            <div>
-            <p>My name is Adelaida Escobar. I am a IT student studying at Oakland University.
+            <div class="bio-section">
+            <p class="bio">My name is Adelaida Escobar. I am a IT student studying at Oakland University.
                 I am a first-generation college student. My parents are from Mexico and immigrated to the States in the early 90s.
                 I am an IT Assistant at a public library in which I am responsible from library technology and software. Once I 
                 graduate from OU, I would stay within the public sector, preferably being an IT professional in the medical field. To
