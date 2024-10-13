@@ -1,0 +1,160 @@
+/*importing google font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Animation for subtle appearance */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Body styling */
+body {
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Kanit', sans-serif; /* Google font */
+    color: #333;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(100,119,217,1) 0%, rgba(225,0,252,0.22591043253238796) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar styling */
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    backdrop-filter: blur(10px); /* Adds blur to background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern effect */
+    border-radius: 10px;
+}
+
+.navbar2 h1 {
+    color: #000000;
+}
+
+.navbar2 ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar2 li {
+    margin: 0 20px;
+}
+
+.navbar2 a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar2 a:hover {
+    color: #f0e68c; /* Hover color change */
+}
+
+/* Styling for sections */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #000000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+hr {
+    border: none;
+    height: 6px;
+    width: 50%; /* width of the line*/
+    background-color: #3f51b5;
+    margin: 20px auto; /* Center the rule on the page */
+}
+
+/* Resume section text styling */
+p {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Table styling */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    overflow: hidden;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    transition: transform 0.3s ease;
+}
+
+table:hover {
+    transform: scale(1.02); /* Small zoom effect on hover */
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table thead {
+    background-color: #6c7cd6;
+    color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #eef3ff;
+}
+
+/* Button hover effect for interactive elements */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #3f51b5;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4f62d6;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f0e68c;
+    text-decoration: underline;
+}
+
+
+

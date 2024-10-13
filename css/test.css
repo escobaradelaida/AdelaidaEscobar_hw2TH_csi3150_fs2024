@@ -1,3 +1,7 @@
+/*importing google font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -5,39 +9,106 @@
     box-sizing: border-box;
 }
 
-/* Body styling */
-body {
-    font-family: 'Kanit', sans-serif; /* Google font */
-    color: #333;
-    background-color: #f0f4f8; /* Light background for contrast */
+/* Animation for subtle appearance */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-/* Header styling */
+/* Body styling */
+body {
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Kanit', sans-serif; /* Google font */
+    color: #333;
+    /*background-color: #f0f4f8; /* Light background for contrast */
+    background: rgb(100,119,217);
+background: linear-gradient(0deg, rgba(100,119,217,1) 0%, rgba(225,0,252,0.22591043253238796) 100%);
+}
+
+
+/* Header styling*/
 header {
     text-align: center;
     padding: 40px 20px; /* Increased padding for more breathing room */
-    background-color: #3f51b5; /* Indigo background for header */
-    color: white;
+    /*background-color: #3f51b5; /* Indigo background for header */
+    color: #000000;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    backdrop-filter: blur(10px); /* Adds blur to background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the box created around the navbar */
+    border-radius: 10px;
+}
+
+/*might change this color*/
+.navbar h1 {
+    color: #000000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+
+.navbar a {
+    /*gets rid of the underline that keeps showing up*/
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    /*makes the hover color change less abrupt*/
+    transition: color 0.3s ease;
+}
+
+/*should change color so that whoever sees it knows that it is a link to my other pages*/
+.navbar a:hover {
+    color: #f0e68c;
 }
 
 /* Hero section styling */
+/*placing my picture in the middle of the screen*/
 .landing-img {
     text-align: center;
     margin: 20px auto; /* Center the landing image */
-    position: relative; /* For absolute positioning of overlay */
 }
 
+/*w3schools suggested how to add a border-radius to make the img oval and border */
 .landing-img img {
     border-radius: 50%; /* Circular image */
-    width: 250px; /* Adjust size as needed */
+    width: 550px; /* Adjust size as needed */
     height: auto;
-    border: 6px solid white; /* White border around image */
+    border: 6px solid rgb(227, 221, 236); /* White border around image */
+    /*i want to user to hover over the img and have it grow so i used box-shadow to create depth
+    and transition so that it doesn't just abruptly enlarge*/
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     transition: transform 0.3s ease; /* Transition for scaling */
 }
 
 .landing-img img:hover {
     transform: scale(1.1); /* Scale up on hover */
+}
+
+/*hated the default hr so looked on w3schools for better options.
+    Made it shorter, thicker, and probably will change the color*/
+hr {
+    border: none;
+    height: 6px;
+    width: 50%; /* width of the line*/
+    background-color: #3f51b5;
+    margin: 20px auto; /* Center the rule on the page */
 }
 
 /* Quote styling */
@@ -52,12 +123,18 @@ quote {
 }
 
 quote:hover {
-    color: #3f51b5; /* Change color on hover */
+    color: #dfe0e9; /* Change color on hover */
+}
+
+.about-me{
+    text-align: center;
+    color: hsl(0, 0%, 0%);
 }
 
 /* About Me section styling */
 .bio-section {
-    background-color: white; /* White background for contrast */
+    background-color: #edecf3; /* White background for contrast */
+    font-family: 'Kanit';
     padding: 40px 20px; /* Increased padding for breathing room */
     margin: 20px auto; /* Center the section */
     border-radius: 8px; /* Rounded corners */
@@ -75,13 +152,14 @@ quote:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #3f51b5; /* Match header */
-    color: white;
+    /*background-color: #3f51b5; /* Match header */
+    color: #ffffff;
 }
 
 /* Interactive links */
 footer a {
-    color: white; /* White links */
+    color: #ffffff; /* White links */
+    padding: 10px;
     text-decoration: none; /* Remove underline */
     position: relative; /* Position for the effect */
     transition: color 0.3s; /* Transition for color */
@@ -92,21 +170,19 @@ footer a:hover {
 }
 
 /* Interactive progress bar styling */
+/*don't know how to center the progress bar*/
 progress {
-    width: 100%;
+    width: 30%;/*make the progress bar not take up the entire screen*/
     height: 15px; /* Height of the progress bar */
     margin: 10px 0; /* Margin around the progress bar */
-    appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling that html established */
 }
 
-/* Style for the progress value */
-progress::-webkit-progress-bar {
-    background-color: #e6e6e6; /* Background color of the bar */
-}
-
-progress::-webkit-progress-value {
-    background-color: #3f51b5; /* Color of the filled part */
-    transition: width 0.3s; /* Transition for width */
+/*label for the progress bar*/
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 /* Responsive design */
