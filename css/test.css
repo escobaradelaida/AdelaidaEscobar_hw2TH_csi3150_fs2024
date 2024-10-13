@@ -169,11 +169,19 @@ footer a:hover {
 
 /* Interactive progress bar styling */
 /*don't know how to center the progress bar*/
-progress {
+.progress {
     width: 30%;/*make the progress bar not take up the entire screen*/
     height: 15px; /* Height of the progress bar */
     margin: 10px 0; /* Margin around the progress bar */
     appearance: none; /* Remove default styling that html established */
+}
+
+/*made a new class in the original html file and then placed*/
+.progress-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center the text elements above and below will be affected*/
 }
 
 /*label for the progress bar*/
